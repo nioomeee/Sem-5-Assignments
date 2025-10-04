@@ -1,2 +1,2 @@
 def student_details(name, age):
-    print(f"Name = {name}, Age = {age}")
+    print(f"Student name = {name}, Age = {age}")
