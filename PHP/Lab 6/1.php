@@ -1,0 +1,1 @@
+Write a program to create an array of 5 integers and display all values.
