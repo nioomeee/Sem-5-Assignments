@@ -8,16 +8,14 @@
 
 # Use assert to ensure the file name passed to the function is not empty.
 
-# writing to the log file 1st
-
 with open("server.log", "w") as f:
-    f.write("User: admin\n")
-    f.write("Timeout: Error on port 80\n")
-    f.write("User logout: admin\n")
-    f.write("Warning: Low disk space\n")
+    f.write("User: admin \n")
+    f.write("Timeout at port 80 \n")
+    f.write("User logout: admin \n")
+    f.write("Insufficient space on system disk \n")
 
 def read_logs(filename):
-    assert filename and len(filename) > 0, "Filename cannot be empty!"
+    assert filename and len(filename) > 0, "Error: File name cannot be empty!"
 
     with open(filename, "r") as f:
         for line in f:
@@ -27,4 +25,4 @@ source = "server.log"
 
 with open("summary.txt", "w") as f:
     for index, content in enumerate(read_logs(source), start = 1):
-        f.write(f"\n Line: {index}, Content: {content}")
+        f.write(f"Line: {index}, Content: {content}\n")
