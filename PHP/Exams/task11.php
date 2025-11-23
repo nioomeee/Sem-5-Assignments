@@ -36,6 +36,7 @@ Output: "[Number] is a Prime Number" (Green) or "[Number] is NOT Prime" (Red). -
                 border: 1px solid #ff9898ff;
                 background-color: #63f7ffff;
                 padding: 5px;
+                font-size: 15px;
             }
         </style>
     </head>
